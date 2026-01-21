@@ -53,7 +53,7 @@ async function botReply(userMessage) {
     li.scrollIntoView({ behavior: "smooth" });
 
     try {
-        const response = await fetch("http://localhost:5001/chat", {
+        const response = await fetch("https://medai-e504.onrender.com/chat", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ message: userMessage })
